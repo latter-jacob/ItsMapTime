@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <%= include_gon(:init => true) %>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    <!-- <%= javascript_include_tag "application", 'data-turbolinks-track' => true %> -->
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= stylesheet_link_tag    "application" %>
     <%= csrf_meta_tags %>
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>

@@ -1,0 +1,22 @@
+<%= form_for @trip do |f| %>
+
+  <%= f.label "title"%><br>
+  <%= f.text_field :title %>
+
+  <%= f.label "description"%><br>
+  <%= f.text_field :description %>
+
+  <%= f.label "latitude"%><br>
+  <%= f.text_field :latitude %>
+
+  <%= f.label "longitude"%><br>
+  <%= f.text_field :longitude %>
+
+  <%= f.label "area"%><br>
+  <%= f.text_field :area %>
+
+
+
+  <%= f.submit "Add Trip", class: "submit" %>
+
+<% end %>
